@@ -317,3 +317,73 @@ button:hover{
     background-color: orangered;
 }
 
+
+/* For small screens (mobile devices) */
+@media (max-width: 600px) {
+    #box1, #box2, #box3, #box4, #box5, #box6 {
+        width: 90%;  /* Reduce box width for small screens */
+        height: 250px;  /* Adjust height */
+        top: 20%;
+        left: 5%;
+        opacity: 1; /* Ensure visibility */
+    }
+
+    #box4, #box5, #box6 {
+        grid-template-columns: repeat(1, 1fr); /* Stack items in one column */
+        grid-template-rows: repeat(3, 1fr); /* Adjust rows */
+    }
+
+    button {
+        top: 80%;
+        left: 40%;
+        font-size: 1rem;  /* Reduce button text size */
+        padding: 10px 20px;  /* Adjust button size */
+    }
+}
+
+/* For medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    #box1, #box2, #box3, #box4, #box5, #box6 {
+        width: 80%;  /* Reduce box width for tablets */
+        height: 280px;  /* Adjust height */
+        top: 25%;
+        left: 10%;
+        opacity: 1; /* Ensure visibility */
+    }
+
+    #box4, #box5, #box6 {
+        grid-template-columns: repeat(2, 1fr); /* Display 2 columns */
+        grid-template-rows: repeat(2, 1fr); /* Adjust rows */
+    }
+
+    button {
+        top: 75%;
+        left: 42%;
+        font-size: 1.2rem;  /* Adjust button text size */
+        padding: 12px 25px;  /* Adjust button size */
+    }
+}
+
+/* For large screens (desktop devices) */
+@media (min-width: 1025px) {
+    #box1, #box2, #box3, #box4, #box5, #box6 {
+        width: 300px;  
+        height: 300px; 
+        top: 30%;
+        left: 40%;
+        opacity: 1; 
+    }
+
+    #box4, #box5, #box6 {
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(2, 1fr); 
+    }
+
+    button {
+        top: 75%;
+        left: 46%;
+        font-size: 1.5rem;  /* Default button text size */
+        padding: 15px 30px;  /* Default button size */
+    }
+}
+
