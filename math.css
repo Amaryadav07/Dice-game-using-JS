@@ -306,7 +306,7 @@ button{
     left: 46%;
     padding: 15px 30px;
     color: white;
-    background-color: darkolivegreen;
+    background-color: rgb(79, 174, 144);
     font-size: 1.5rem;
     font-weight: bold;
     border: none;
@@ -314,6 +314,6 @@ button{
     border-radius: 20px;
 }
 button:hover{
-    background-color: orangered;
+    background-color: rgb(31, 177, 200);
 }
 
